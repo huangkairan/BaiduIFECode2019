@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+  }
+  html {
+    font-family: sans-serif;
+  }
+  body {
+    margin: 0;
+  }
+  #header{
+      width: 100%;
+      background: #333333;
+  }
+  .content{
+	margin: 0px auto;
+	width: 960px;
+}
+  #header .content{
+      height: 80px;
+      color: white;
+      position: relative;
+  }
+  .logo{
+      line-height: 80px;
+      font-size: 25px;
+  }
+  .headerMenu{
+      position: absolute;
+      top: 0px;
+      right: 0px; 
+  }
+  .headerMenu div{
+      float: left;
+      margin-left: 10px;
+      margin-top: 5px;
+  }
+  .headerMenu a:link{
+      color: white
+  }
+  .headerMenu a:visited{
+      color: white
+  }
+  .headerMenu a:hover{
+      color: grey
+  }
+#banner{
+    background-color: #66bb33;
+}
+#banner .content{
+    position:relative;
+    height:300px;
+    
+}
+#banner .buttonlist{
+    height: 45px;
+	position: absolute;
+	bottom: 10px;
+	right: 0px;
+}
+
+#banner .button{
+    float:left;
+    margin: 10px 0 0 10px;
+    height:35px;
+    width:30px;
+    text-align: center;
+    line-height: 35px;
+    vertical-align: bottom;
+    background-color: #ffffff;
+    border:1px solid black;
+
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+#banner .button:hover{
+    float:left;
+    margin: 0px 0 0 10px;
+    height:45px;
+    width:30px;
+    text-align: center;
+    line-height: 35px;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border:1px solid black;
+    opacity: 1;
+}
+
+#menu {
+    width:100%;
+    border-bottom: 1px solid #ccc;
+}
+#menu .content{
+    height:70px;
+    position: relative;
+}
+#menu ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    position: absolute;
+    bottom:-1px;
+    left:0px;
+}
+#menu li:nth-of-type(1){
+    float:left;
+    padding:15px 25px;
+    border:1px solid #ccc;
+    border-radius: 20px 20px 0 0;
+    border-bottom:1px solid white;
+    background: white;
+    cursor: pointer;
+}
+#menu li{
+    float:left;
+    padding:15px 25px;
+    border:1px solid #ccc;
+    border-radius: 20px 20px 0 0;
+    
+    background: #eee;
+    cursor: pointer;
+}
+
+#main{
+    width: 100%;
+}
+#main .content{
+    margin-top:10px;
+    display:flex;
+    flex-wrap: wrap;
+}
+#main .content div{
+    border:1px solid #ccc;
+    padding:70px;
+    margin-right:10px;
+    margin-bottom:10px;
+    flex: 1;
+    text-align: center;
+}
+#footer{
+       background:#666;
+    
+}
+#footer .content{
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    color:white;
+}
