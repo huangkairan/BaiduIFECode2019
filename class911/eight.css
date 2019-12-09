@@ -1,0 +1,42 @@
+#support{
+    position: relative;
+    width: 1600px;
+    height: 415px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+}
+#support .about1{
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    height: 140px;
+}
+#support .content{
+    font-size: 14px;
+    margin-top: 25px;
+    color:rgba(255,255, 255, 0.5);
+    transition: all 0.2s;
+}
+#support .content:hover{
+    cursor: pointer;
+    color:rgba(255,255, 255,1);
+}
+#support .about2{
+    position: absolute;
+    top: 80px;
+    left: 510px;
+    height: 140px;
+}
+#support .about3{
+    position: absolute;
+    top: 80px;
+    left: 815px;
+    height: 140px;
+}
+#support .about4{
+    position: absolute;
+    top: 80px;
+    left: 1110px;
+    height: 140px;
+}

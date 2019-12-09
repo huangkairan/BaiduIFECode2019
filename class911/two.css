@@ -1,0 +1,100 @@
+#boatload{
+    color: black;
+    width: 1600px;
+    height: 710px;
+    position: relative;
+    background-color: #fff;
+}
+#boatload .title1{
+    text-align: center;
+    margin-top:90px;
+    font-size:15px;
+    font-weight: bold;
+}
+#boatload .title2{
+    text-align: center;
+    font-size:35px;
+    margin-top:30px;
+    font-weight: bold;
+    color:black;
+}
+#boatload .img1{
+    border:0px;
+    width: 50px;
+    height: 49px;
+    position: absolute;
+    top: 315px;
+    left: 285px;
+    background-image: url(img/phone.png);
+}
+#boatload .caption1{
+    position: absolute;
+    top: 310px;
+    left: 350px;
+    font-weight: bold;
+}
+#boatload .content1{
+    position: absolute;
+    top: 350px;
+    left: 350px;
+}
+#boatload .img2{
+    border:0px;
+    width: 50px;
+    height: 49px;
+    position: absolute;
+    top: 315px;
+    left: 880px;
+    background-image: url(img/option.png);
+}
+#boatload .caption2{
+    position: absolute;
+    top: 310px;
+    left: 945px;
+    font-weight: bold;
+}
+#boatload .content2{
+    position: absolute;
+    top: 350px;
+    left: 945px;
+}
+#boatload .img3{
+    border:0px;
+    width: 50px;
+    height: 48px;
+    position: absolute;
+    top: 480px;
+    left: 285px;
+    background-image: url(img/pen.png);
+}
+#boatload .caption3{
+    position: absolute;
+    top: 480px;
+    left: 350px;
+    font-weight: bold;
+}
+#boatload .content3{
+    position: absolute;
+    top: 520px;
+    left: 350px;
+}
+#boatload .img4{
+    border:0px;
+    width: 50px;
+    height: 48px;
+    position: absolute;
+    top: 480px;
+    left: 880px;
+    background-image: url(img/regulator.png);
+}
+#boatload .caption4{
+    position: absolute;
+    top: 480px;
+    left: 945px;
+    font-weight: bold;
+}
+#boatload .content4{
+    position: absolute;
+    top: 520px;
+    left: 945px;
+}

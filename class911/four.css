@@ -1,0 +1,54 @@
+#product{
+    width: 1600px;
+    height: 580px;
+    position: relative;
+    color:black;
+    border-bottom: 1px solid #ccc;
+}
+#product .title{
+    margin-top:100px;
+    font-size: 40px;
+    text-align: center;
+}
+#product .content1{
+    position: absolute;
+    top: 220px;
+    left: 320px;
+}
+#product .logo1{
+    height: 35px;
+    width: 120px;
+    background-image: url(img/Singleton.png);
+    margin:0 auto;
+}
+#product .text{
+    margin-top:30px;
+}
+#product .content2{
+    position: absolute;
+    top: 220px;
+    left: 670px;
+}
+#product .logo2{
+    height: 34px;
+    width: 75px;
+    background-image: url(img/hero.png);
+    margin:0 auto;
+}
+#product .text{
+    margin-top:30px;
+}
+#product .content3{
+    position: absolute;
+    top: 220px;
+    left: 1010px;
+}
+#product .logo3{
+    height: 31px;
+    width: 117px;
+    background-image: url(img/portland.png);
+    margin:0 auto;
+}
+#product .text{
+    margin-top:30px;
+}

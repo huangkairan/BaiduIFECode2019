@@ -1,0 +1,55 @@
+#supportive{
+    color:white;
+    width: 1600px;
+    height: 800px;
+    position: relative;
+    background-image: url(img/Background2.png);
+}
+#supportive .content1{
+    position: absolute;
+    top:180px;
+    left: 310px;
+    font-size:35px;
+}
+#supportive .content2{
+    position: absolute;
+    top:360px;
+    left: 310px;
+    font-size:20px;
+    opacity: 0.5;
+}
+#supportive .btn1{
+    border: 1px solid white;
+    border-radius: 3px;
+    outline: none;
+    transition: all 0.2s;
+    background-color: white;
+    height:60px;
+    width: 240px;
+    position: absolute;
+    top: 550px;
+    left: 310px;
+}
+#supportive .btn1:hover{
+    cursor: pointer;
+    border: 1px solid  rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#supportive .btn2{
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    outline: none;
+    transition: all 0.2s;
+    background-color: transparent;
+    height:60px;
+    width: 240px;
+    position: absolute;
+    top: 550px;
+    left: 580px;
+}
+#supportive .btn2:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}

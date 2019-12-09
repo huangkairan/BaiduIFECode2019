@@ -1,0 +1,116 @@
+#contact{
+    position: relative;
+    width: 1600px;
+    height: 700px;
+    border-bottom: 1px solid #ccc;
+    color:black;
+}
+#contact .form{
+    position: absolute;
+    top:70px;
+    left:310px;
+    width: 480px;
+    height: 570px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+}
+#contact .title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+#contact .email{
+    margin:40px 40px 0px 40px;
+    padding: 15px;
+    width: 370px;
+    height: 50px;
+    outline: none;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+}
+#contact .subject{
+    margin:30px 40px 0px 40px;
+    padding: 15px;
+    width: 370px;
+    height: 50px;
+    outline: none;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+}
+#contact .message{
+    margin:30px 40px 0px 40px;
+    padding: 15px;
+    width: 370px;
+    height: 200px;
+    outline: none;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    line-height: 28px;
+    vertical-align:top;
+    overflow: hidden;
+}
+#contact .content1{
+    position: absolute;
+    top:160px;
+    left: 910px;;
+    font-size: 30px;
+    font-weight: bold;
+}
+#contact .content2{
+    position: absolute;
+    top:220px;
+    left: 910px;;
+    font-size: 20px;
+}
+#contact .content3{
+    position: absolute;
+    top:350px;
+    left: 910px;;
+    font-size: 14px;
+    margin-left:30px;
+    font-weight: bold;
+}
+#contact .content4{
+    position: absolute;
+    top:450px;
+    left: 910px;;
+    font-size: 14px;
+    margin-left:30px;
+    font-weight: bold;
+}
+#contact .content5{
+    position: absolute;
+    top:510px;
+    left: 910px;;
+    font-size: 14px;
+    margin-left:30px;
+    font-weight: bold;
+}
+div.img1{
+    width: 19px;
+    height: 24px;
+    position: absolute;
+    top:360px;
+    left: 910px;;
+    background-image: url(img/MapIcon.png);
+}
+div.img2{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top:450px;
+    left: 910px;;
+    background-image: url(img/PhoneIcon.png);
+}
+div.img3{
+    width: 24px;
+    height: 19px;
+    position: absolute;
+    top:510px;
+    left: 910px;;
+    background-image: url(img/MailIcon.png);
+}

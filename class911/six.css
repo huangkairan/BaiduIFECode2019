@@ -1,0 +1,154 @@
+#crew{
+    color:white;
+    width: 1600px;
+    height: 1080px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+#crew .title1{
+    margin-top: 90px;
+    font-size: 38px;
+    text-align: center;
+}
+#crew .title2{
+    margin-top: 20px;
+    font-size: 17px;
+    text-align: center;
+}
+#crew .img1{
+    border-radius: 3px;
+    position: absolute;
+    top: 270px;
+    left: 310px;
+    width: 470px;
+    height: 340px;
+    background-image: url(img/1.png);
+}
+#crew .front1{
+    border-radius: 3px;
+    position: absolute;
+    top: 270px;
+    left: 310px;
+    width: 470px;
+    height: 340px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+    opacity: 0;
+}
+#crew .front1:hover{
+    opacity: 0.5;
+}
+#crew .caption1{
+    margin-top: 110px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#crew .caption2{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0.5;
+}
+#crew .icon1{
+    position: absolute;
+    top: 190px;
+    left: 120px;
+    border:1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+#crew .icon2{
+    position: absolute;
+    top: 190px;
+    left: 210px;
+    border:1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+#crew .icon3{
+    position: absolute;
+    top: 190px;
+    left: 300px;
+    border:1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+#crew .img2{
+    border-radius: 3px;
+    position: absolute;
+    top: 270px;
+    left: 810px;
+    width: 470px;
+    height: 340px;
+    background-image: url(img/2.png);
+}
+#crew .front2{
+    border-radius: 3px;
+    position: absolute;
+    top: 270px;
+    left: 810px;
+    width: 470px;
+    height: 340px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+    opacity: 0;
+}
+#crew .front2:hover{
+    opacity: 0.5;
+}
+#crew .img3{
+    border-radius: 3px;
+    position: absolute;
+    top: 640px;
+    left: 310px;
+    width: 470px;
+    height: 340px;
+    background-image: url(img/3.png);
+}
+#crew .front3{
+    border-radius: 3px;
+    position: absolute;
+    top: 640px;
+    left: 310px;
+    width: 470px;
+    height: 340px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+    opacity: 0;
+}
+#crew .front3:hover{
+    opacity: 0.5;
+}
+#crew .img4{
+    border-radius: 3px;
+    position: absolute;
+    top: 640px;
+    left: 810px;
+    width: 470px;
+    height: 340px;
+    background-image: url(img/4.png);
+}
+#crew .front4{
+    border-radius: 3px;
+    position: absolute;
+    top: 640px;
+    left: 810px;
+    width: 470px;
+    height: 340px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+    opacity: 0;
+}
+#crew .front4:hover{
+    opacity: 0.5;
+}
