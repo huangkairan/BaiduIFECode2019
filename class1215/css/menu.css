@@ -1,0 +1,84 @@
+#menu{
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 250px;
+    color:white;
+    background-color: #222c3c;
+}
+#menu .top{
+    height: calc(100% - 65px);
+    overflow: scroll;
+}
+#menu .menu{
+    margin: 25px 30px 0 25px;
+    border-bottom: 1px solid #2a3547;
+}
+#menu .title{
+    width: 100%;
+    color:rgba(255,255,255, 0.5);
+    margin-bottom: 20px;
+}
+#menu .title img {
+    float:right;
+    transition: 0.2s;
+    opacity: 0.5;
+}
+#menu .title img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#menu .item{
+    width: 100%;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(255,255,255, 0.5);
+    line-height: 25px;
+    margin-bottom: 20px;
+    transition: all 0.2s;
+    position: relative;
+}
+#menu .item:hover{
+    cursor: pointer;
+    color: rgba(255,255,255, 1);
+}
+#menu .products{
+    font-weight: bold;
+    margin: 25px 30px 0 25px;
+    border-bottom: 1px solid #2a3547;
+}
+#menu .products span{
+    margin-left: 10px;
+}
+#menu .dashboard{
+    font-weight: bold;
+    margin: 25px 30px 0 25px;
+    border-bottom: 1px solid #2a3547;
+}
+#menu .bottom{
+    font-size: 12px;
+    height:40px;
+    width: 190px;
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+}
+
+#menu .bottombar{
+    width: 100%;
+    background-color:rgba(255,255,255,0.2);
+    border-radius: 2px;
+    height:5px;
+    position: absolute;
+    bottom:10px;
+    left:0 px;
+}
+#menu .bottombar2{
+    width: 23%;
+    background-color:blue;
+    border-radius: 2px;
+    height:5px;
+    position: absolute;
+    bottom:10px;
+    left:0 px;
+}

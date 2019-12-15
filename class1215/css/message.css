@@ -1,0 +1,431 @@
+#message{
+    position: relative;
+    float: left;
+    color: black;
+    height: 100%;
+    width: calc(100% - 350px);
+    min-width: 400px;
+    background-color: white;
+}
+#message .header{
+    height: 80px;
+    width: 100%;
+}
+#message .header .info {
+    height: 50px;
+    margin-top: 15px;
+    margin-right: 30px;
+    float: right;
+    background-color: #fff;
+}
+#message .title{
+    height: 50px;
+    line-height: 80px;
+    margin-left: 30px;
+    color:black;
+    font-size: 24px;
+    float: left;
+}
+#message .selfinfo{
+    height:50px;
+    margin-left: 15px;
+    float: left;
+}
+#message .selfinfo .name{
+    margin-top: 2px;
+    color: #2399f1;
+    line-height: 20px;
+}
+#message .right{
+    color:#b5b5b5;
+    line-height: 25px;
+}
+#message .dropdown{
+    margin-left: 40px;
+    margin-top: 21px;
+    float: right;
+    display: block;
+    background-image: url(../img/messages/dropdown.png);
+}
+#message .searchbar{
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+#message .searchleft{
+    width: 400px;
+    height: 100%;
+    border-right:1px solid #ccc;
+    position: relative;
+    float: left;
+}
+#message .search{
+    width : 320px;
+    height:30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 2px;
+    outline: none;
+    background-color:transparent;
+    border:1px solid #ccc;
+    padding-top: 3px;
+    padding-left: 20px;
+    transition: all 0.5s;
+}
+#message .search:focus{
+    border:1px solid blue;
+}
+#message .searchicon{
+    position: absolute;
+    top:27px;
+    left:325px;
+}
+#message .searchright{
+    height: 80px;
+    width: calc(100% - 400px);
+    float: left;
+    position: relative;
+    font-size: 16px;
+}
+#message .searchright .title{   
+    height: 80px;
+    float: left;
+    font-size: 16px;
+}
+#message .online{
+    position: absolute;
+    top:35px;
+    left:130px;
+}
+#message .buttonbar{
+    width: 310px;
+    height: 100%;
+    position: relative;
+    float: right;
+}
+#message .buttonbar .user{
+    width: 28px;
+    height: 28px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    float: left;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    border:1px solid #ccc;
+    background: linear-gradient(to bottom,#fff,#f2f4f7);
+}
+#message .buttonbar .usericon{
+    position: absolute;
+    top:37px;
+    left:7px;
+    cursor: pointer;
+}
+#message .buttonbar .upload{
+    width: 28px;
+    height: 28px;
+    border-left: 0;
+    border-right: 0;
+    float: left;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    border:1px solid #ccc;
+    background: linear-gradient(to bottom,#fff,#f2f4f7);
+}
+#message .buttonbar .uploadicon{
+    position: absolute;
+    top:37px;
+    left:35px;
+    cursor: pointer;
+}
+#message .buttonbar .trash{
+    width: 28px;
+    height: 28px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: 0;
+    float: left;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    border:1px solid #ccc;
+    background: linear-gradient(to bottom,#fff,#f2f4f7);
+}
+#message .buttonbar .trashicon{
+    position: absolute;
+    top:37px;
+    left:62px;
+    cursor: pointer;
+}
+#message .buttonbar .pagenum{
+    float: left;
+    line-height: 28px;
+    margin-left: 25px;
+    margin-top:30px;
+    border-left: 1px solid #ccc;
+    padding-left: 25px;
+}
+#message .buttonbar .ArrowLeft{
+    width: 28px;
+    height: 28px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: 0;
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    outline: none;
+    cursor: pointer;
+    border:1px solid #ccc;
+    background: linear-gradient(to bottom,#fff,#f2f4f7);
+}
+#message .buttonbar .ArrowLefticon{
+    position: absolute;
+    top:39px;
+    left:213px;
+    cursor: pointer;
+}
+#message .buttonbar .ArrowRight{
+    width: 28px;
+    height: 28px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: 0;
+    float: left;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    border:1px solid #ccc;
+    background: linear-gradient(to bottom,#fff,#f2f4f7);
+}
+#message .buttonbar .ArrowRighticon{
+    position: absolute;
+    top:39px;
+    left:241px;
+    cursor: pointer;
+}
+#message .chatlist{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 160px);
+    border-top:0px;
+    border-left:0px;
+}
+#message .chatbrieflist{
+    float: left;
+    position: relative;
+    width: 400px;
+    height: 100%;
+    border-top:0px;
+    border-left:0px;
+    border-right: 1px solid #ccc;
+    overflow: scroll;
+}
+#message .chatbrief{
+    position: relative;
+    height: 130px;
+    width: 100%;
+    padding: 18px 20px 20px 30px;
+    border-bottom: 1px solid #ccc;
+}
+#message .blueline{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    background-color: blue;
+    height: 100%;
+}
+#message .userinfo{
+    position: relative;
+    width: 100%;
+    height: 46px;
+}
+#message .maininfo{
+    height: 46px;
+    margin-left: 20px;
+    float: left;
+}
+#message .chatbrieflist .name {
+    line-height: 26px;
+
+}
+#message .app{
+    color:#ccc;
+    line-height: 20px;
+}
+#message .time{
+    float: right;
+    color:#7f8fa4;
+}
+#message .chatbrieflist .content{
+    margin-top: 10px;
+    font-weight: none;
+    font-size: 13px;
+    
+}
+#message .chatmainlist{
+    position: relative;
+    float: left;
+    height: 100%;
+    width: calc( 100% - 400px);
+}
+
+#message .chatmain{
+    overflow: scroll;
+    position: relative;
+    height: calc( 100% - 80px);
+    width: 100%;
+}
+#message .chatmain .detail{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 30px 0px 30px;
+}
+#message .chatmain .info{
+    overflow: hidden;
+}
+#message .chatmain .info .caption{
+    position: relative;
+    height: 20px;
+    width: 100%;
+}
+#message .chatmain .info .name {
+    height: 20px;
+    float: left;
+}
+#message .chatmain .info .time {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    padding-left: 20px;
+    color:#ccc;
+    float: left;
+}
+#message .chatmain .content{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+#message .line{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+#message .line .greyline{
+    flex: 1;
+    border-bottom:1px solid #ccc;
+}
+#message .line .time{
+    height: 10px;
+    line-height: 10px;
+    color:#ccc;
+    padding:0 10px 0 10px;
+}
+.photo {
+    margin-top: 15px;
+    position: relative;
+}
+.photo .photo1 {
+    width: 156px;
+    height: 100px;
+    margin-right: 10px;
+    background-image: url(../img/messages/Photo1.png);
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+}
+.photo .open1{
+    width: 156px;
+    height: 100px;
+    margin-right: 10px;
+    background-color :rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.photo .open1:hover{
+    opacity: 1;
+}
+.photo .circle{
+    width: 50px;
+    height: 50px;
+    margin: 25px 53px;
+    text-align: center;
+    border-radius: 50% 50% 50% 50%;
+    background-color: rgba(255,255,255,0.3);
+}
+.photo .circle img{
+    margin-top:17px;
+    display: inline-block;
+}
+.photo .photo2{
+    width: 156px;
+    height: 100px;
+    margin-right: 10px;
+    background-image: url(../img/messages/Photo2.png);
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    position: absolute;
+    left: 166px;
+}
+.photo .open2{
+    width: 156px;
+    height: 100px;
+    margin-right: 10px;
+    background-color :rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    position: absolute;
+    left: 166px;
+    opacity: 0;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.photo .open2:hover{
+    opacity: 1;
+}
+
+#message .chatmainlist .input{
+    height: 80px;
+    width: 100%;
+    padding: 10px 30px 10px 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#message .chatmainlist .addicon{
+    position: absolute;
+    bottom :43px;
+    left:43px;
+}
+#message .chatmainlist .input .addiconbtn{
+    float: left;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    background:linear-gradient(to bottom ,#fff,#f2f4f7) ;
+    border:1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;;
+    cursor: pointer;
+}
+#message .chatmainlist .input .txt{
+    height: 40px;
+    width: calc(100% - 40px);
+    outline:none;
+    border: 1px solid #ccc;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 0;
+    padding: 10px 50px 10px 20px;
+    color: #ccc;
+}
