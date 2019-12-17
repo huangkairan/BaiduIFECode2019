@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>1</title>
+    </head>
+    <body>
+        <h1>huangkairan</h1>
+        <h2>18757128360@163.com</h2>
+        <input type="button" id="btn1" value="click">
+        <script>
+            document.getElementById("btn1").onclick =function(){
+                var time= new Date().getHours();
+                console.log(time);
+                if(time<12)
+                    alert("早上好");
+                else if(time<18)
+                    alert("下午好");
+                else
+                    alert("晚上好");
+            }
+        </script>
+    </body>
+</html>
