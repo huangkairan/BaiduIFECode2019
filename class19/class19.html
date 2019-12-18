@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <div id="wrapper">
+        <div id="news-top" class="section">
+            <h3>Some title</h3>
+            <div class="content">
+                <ul>
+                    <li><span>HTML</span><a href="">Some Link1</a></li>
+                    <li><span>JS</span><a class="active" href="">Some Link2</a></li>
+                    <li><span>CSS</span><a href="">Some Link3</a></li>
+                    <li><span>JS</span><a href="">Some Link4</a></li>
+                </ul>
+            </div>
+            <img src="">
+            <p class="">Some Text</p>
+        </div>
+        <div id="news-normal" class="section">
+            <h3>Some title</h3>
+            <div class="content">
+                <ul>
+                    <li><span>HTML</span><a href="">Some Link1</a></li>
+                    <li><span>HTML</span><a href="">Some Link2</a></li>
+                    <li><span>JS</span><a class="active" href="#">Some Link3</a></li>
+                    <li><span>CSS</span><a href="">Some Link4</a></li>
+                </ul>
+            </div>
+            <img src="">
+            <p class="">Some Text</p>
+
+            <input type="button" id="btn1" value="btn1" onclick="getAllListItem()">
+            <input type="button" id="btn2" value="btn2" >
+            <input type="text" id="sectionId1"  >
+            <br>
+            <input type="text" id="sectionId2" placeholder="sectionId">
+            <input type="text" id="spanCont" placeholder="spanCont">
+            <input type="button" id="btn3" value="btn3">
+            <br>
+            <input type="text" id="sectionId3" placeholder="sectionId">
+            <input type="button" id="btn4" value="btn4">
+        </div>      
+    </div>
+    <script>
+
+    function getAllListItem() {
+        // 返回页面中所有li标签
+        var x=document.querySelectorAll("li");
+        console.log(x);
+    }
+
+    //var bt2=document.getElementById("btn2");
+    document.getElementById("btn2").onclick = function(){
+        findAllHtmlSpanInOneSection(document.getElementById('sectionId1').value);
+    }
+    function findAllHtmlSpanInOneSection(sectionId) {
+        // 返回某个section下所有span中内容为HTML的span标签
+        var span=document.querySelectorAll('#' +sectionId +' span');
+        var result=[];
+        for(var i=0;i<span.length;i++){
+            if(span[i].innerHTML=='HTML'){
+                result.push(span[i]);
+            }
+        }
+        console.log(result);
+    }
+    //var bt3=document.getElementById('btn3');
+    document.getElementById('btn3').onclick=function(){
+        findListItem(document.getElementById('sectionId2').value,document.getElementById('spanCont').value);
+        console.log(sectionId2.value);
+        console.log(spanCont.value);
+    }
+    function findListItem(sectionId, spanCont) {
+        // 返回某个section下，所有所包含span内容为spanCont的LI标签
+        var li=document.querySelectorAll('#' +sectionId+' li');
+        var result=[];
+        for(var i=0;i<li.length;i++){
+            var span=li[i].querySelectorAll('span');
+            for(var j=0;j<span.length;j++)
+            {
+                if(span[j].innerHTML==spanCont){
+                    result.push(li[i]);
+                    break;
+                }
+            }
+        }
+        console.log(result);
+    }
+    
+    document.getElementById("btn4").onclick=function(){
+        getActiveLinkContent(document.getElementById('sectionId3').value);
+    }
+    function getActiveLinkContent(sectionId) {
+        // 返回某个section下，class为active的链接中包含的文字内容
+        var a=document.querySelectorAll('#'+sectionId+' a');
+        var result=[];
+        for(var i=0;i<a.length;i++){
+            if(a[i].className=='active'){
+                result.push(a[i].textContent);
+            }
+        }
+        console.log(result);
+    }
+
+    </script>
+</body>
+</html>

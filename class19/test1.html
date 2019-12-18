@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+    <style>
+        #container{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: #ccc;
+        }
+        #animate{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: yellow;
+            position: absolute;
+        }
+    </style>
+    </head>
+    <script type="text/javascript" src="js1.js"></script>  
+    <body>
+        <input type="button" id="test1" value="before" onclick="function1()">
+        <p id="p1">
+            这是文本。
+            这是文本。
+            这是文本。
+            这是文本。
+        </p>
+        <input type="button" id="test2" value="move" onclick="mymove()">
+        <div id="container">
+            <div id="animate" onclick="changeColor()"></div>
+        </div>
+    </body>
+</html>
