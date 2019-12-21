@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  #smile{
+    height: 480px;
+    width: 480px;
+    margin: 0 auto;
+    background-image: url(smile.jpg);
+    background-position: 0px -1px;
+    border: 1px solid black;
+  }
+  </style>
+</head>
+<body>
+    <div id="smile"></div>
+    <script type="text/javascript">
+      var num=0;
+      var f=true;
+      function smile(){
+        if(num==0){
+          f=true;
+        }
+        else if(num==16){
+          f=false;
+        }
+        if(f) {
+          num++;
+        }
+        else{
+          num--;
+        }
+        
+        document.getElementById('smile').style.backgroundPositionY=(-num*480)+'px';
+        
+      }
+      setInterval(smile,50);
+    </script>
+</body>
+</html>

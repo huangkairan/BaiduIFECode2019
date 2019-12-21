@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div {
+       width: 25%;
+       float: left;
+       height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    for (let i=1;i<=16;i++){
+      const myDiv=document.createElement('div');
+      document.body.appendChild(myDiv);
+    }
+    function random(number){
+      return Math.floor(Math.random()* number);
+    }
+    function bgChange(){
+      const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+      return rndCol;
+    }
+    const divs = document.querySelectorAll('div');
+    for(let i=0;i<divs.length;i++){
+      divs[i].onclick = function(e) {
+        e.target.style.backgroundColor = bgChange();
+      }
+    }
+  </script>
+  <input id="name" type="text">    
+  <button id="submit-btn">Submit</button>
+
+  <script>
+    var submit= document.getElementById("submit-btn");
+    var input= document.getElementById('name');
+    submit.onclick= function(){
+      console.log(input.value);
+    }
+    input.onkeydown=function(){
+      if(event.keyCode==13){
+        console.log(input.value);
+      }
+      if(event.keyCode==27){
+        input.value='';
+      }
+    }
+    
+  </script>
+</body>
+</html>

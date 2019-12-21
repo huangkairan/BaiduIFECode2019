@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .mover {
+            height: 30vh;
+            width: 80vw;
+            margin:auto;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">date</button>
+    <h1 id="dateshow">123</h1>
+    <input type="text" id="txtUpper" value="" placeholder="text here" onchange="myUpper()">
+    <div class="mover" onmouseover="mOver(this)" onmouseout="mOut(this)"></div>
+</body>
+<script>
+    document.getElementById("btn1").onclick= function(){
+        document.getElementById("dateshow").innerHTML=Date();
+    }
+    function myUpper(){
+        var x=document.getElementById("txtUpper");
+        x.value= x.value.toUpperCase();
+    }
+    function mOver(id){
+        id.innerHTML = "谢谢您";
+    }
+    function mOut(id){
+        id.innerHTML="shit js";
+    }
+</script>
+</html>
