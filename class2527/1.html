@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="timeA"></h1>
+  <h1 id="timeB"></h1>
+  <script>
+    var h1=document.getElementById('timeA');
+    var h2=document.getElementById('timeB');
+    function print(){
+      var date= new Date();
+      var year=date.getFullYear();
+      var month=format(date.getMonth());
+      var day = format(date.getDate());
+      var hour = date.getHours();
+      var minute = format(date.getMinutes());
+      var second = format(date.getSeconds());
+      var AMPM = date.getHours()<12?'AN':'PM';
+      packageCN(year,month,day,getWeekCN(date),format(hour),minute,second);
+			packageEN(year,month,day,getWeekEN(date),formatHour(hour),minute,second,AMPM);
+		
+    }
+    function getWeekCN(date){
+      var week=['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+      return week[date.getDay()];
+    }
+    function getWeekEN(date){
+      var week=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+      return week[date.getDay()];
+    }
+    function formatHour(hour){
+      if(hour>=12){
+        return format(hour-12);
+      }
+    }
+    function format(number){
+      if(Number(number)<10){
+        return '0'+ number;
+      }
+      return number;
+    }
+    function packageCN(year,month,day,week,hour,minute,second){
+      h1.innerHTML= year + '年' + month + '月' + day + '日' + week + ' ' + hour + ':' + minute + ' ' + second; 
+    }
+    function packageEN(year,month,day,week,hour,minute,second,AMPM){
+      h2.innerHTML= year + '-' + month + '-' + day + '-' + week + ' ' + hour + ':' + minute + ' ' + second + ' ' + AMPM; 
+    }
+    print();
+    var time=setInterval('print()',1000);
+  </script>
+</body>
+</html>
